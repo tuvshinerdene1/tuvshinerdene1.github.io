@@ -1,0 +1,183 @@
+/*Stylesheet for web site*/
+* {padding: 0; margin: 0;}
+body{
+    background-color: #8c8c8c;
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-size: 100%;
+}
+div#wrapper {
+    background-color: white;
+    color: black;
+    width: 70%; /*Агуулга хэсгийн өргөн*/
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+div#headersection {
+    color:rgb(1, 103, 255);
+    background: #ffe574 url(newpicture.jpg) repeat-y left top;
+}
+img#logo {
+    background-color: white;
+    padding:10px;
+    border: 10px solid #d9d9d9;
+}
+h1{font-size: 150%;}
+h2{font-size: 130%;}
+address {
+    text-align: center;
+    font-size: 80%;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+a{text-decoration: none;} 
+#navisection {
+    text-align: right; /*баруун талд шахсан*/
+    color:black;
+    background: #ffe574 url(newpicture.jpg) repeat-y top left;
+    padding: 5px 10px 4px 10px;
+    border-bottom: 1px solid #8c8c8c;
+}
+#navisection a:hover,
+#navisection a:focus {
+    color: white;
+    background-color: #d90000;
+}
+#navisection a:active {
+    color:black;
+    background-color:white;
+    border-bottom-color: white;
+}
+#navisection ul {margin-bottom: 0;}
+#navisection li {
+    display: inline;
+    list-style-type: none;
+    margin:0;/*Баруун талд 10px, бусдаар 0*/
+}
+#navisection a {
+    color:black;
+    background-color: #87858b;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid #8c8c8c;
+}
+#startpage #navi01 a,
+#contactpage #navi02 a {
+    color:black;
+    background-color: white;
+    border-bottom-color: white;
+}
+a:link{color: #d90000;}
+a:visited{color: #cc6666;}
+a:hover,
+a:focus {
+    color: black;
+    background-color: white;
+    border-bottom-color:white;
+}
+a:active {
+    color: white;
+    background-color: #d90000;
+}
+div#textsection {
+    padding-top:20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+}
+div#textsection img {
+ 
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+ 
+}
+div#textsection a{
+    border-bottom: 1px dotted #cc0000;
+}
+div#textsection a:hover,
+div#textsection a:focus {
+    border-bottom: 1px solid #d90000;
+}
+div#headersection  span {
+    color: #d90000;
+}
+/*Доод талын зай*/
+h2, p, ul, ol {margin-bottom: 1em;}
+/*Зайгүй давхар жагсаалт*/
+ul ul {margin-bottom: 0;}
+/*зүүн талын зай*/
+li {margin-left: 1em;}
+div#footsection {
+    padding-top: 10px;/*Хүрээний шугамын доор*/
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-top: 1px solid #8c8c8c;/*Дээд талын шулуун*/
+    margin-top: 0;/*Шугамын дээд тал*/
+}
+
+/*contact form*/
+form {
+    background-color: #eee;
+    width:370px;
+    padding:20px;
+    border: 1px solid #8c8c8c;
+}
+label {
+    /*Өөрийн мөр дээрх гарчиг*/
+    display: block;
+    cursor: pointer; /*mouse pointer will turn into a hand*/
+}
+input#sender,
+textarea {
+    width: 300px;
+    border: 1px solid #8c8c8c;
+    margin-bottom: 1em;
+}
+textarea{
+    height: 7em;
+}
+input:focus,
+textarea:focus {
+    background-color: #d9d9d9;
+}
+.skiplink {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+#headsection p {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 0 5px 0;
+    margin-bottom: 0;
+}
+#headsection {
+    position: relative;/*байрлуулсан, харин дарааллаар байна*/
+    color: black;
+    background: #ffe574 url(newpicture.jpg) repeat-y top left;
+    padding: 10px 20px 0 20px;
+}
+#title1 {
+    text-align: center;
+}
+
+#profilePicture{
+    text-align: center;
+}
+#gamePic{
+    width:100%;
+    height:100%;
+                object-fit:cover;
+}
