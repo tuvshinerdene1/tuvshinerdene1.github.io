@@ -1,0 +1,130 @@
+html, body{
+    font-family: "Roboto";
+    height: 100%;
+    margin: 0;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform:translateX(-20px)
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+.bigtable {
+    table-layout: fixed;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.contentTable {
+    animation: transitionIn 1s;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.textSection{
+    
+    padding-left: 5%;
+    width: 50%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.textSection p, h2{
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+.menu{
+    
+    height: 15%;
+    font-size: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menuButton{
+    font-size: 60%;
+}
+.content{
+    
+    border-top: 1px solid;
+    text-align: center;
+}
+body{
+    background-color: #e7dfd8;
+}
+.content{
+    margin: 5%;
+}
+.headertext{
+    font-weight: normal;
+    line-height: 10%;
+    text-align: center;
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.gif{
+    width: 80%;
+    height: auto;
+}
+.SectionA{
+    width: 50%;
+}
+.SectionB{
+    width: 50%;
+}
+.bio{
+    
+    width: 100%;
+    height: 50%;
+    table-layout: relative;
+    font-size: 2rem;
+}
+.bio th, td{
+    font-weight: normal;
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+}
+
+
+td{
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(241, 187, 106);
+}
+a:active{
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+
+.contentDiv{
+    border: 1px solid black;
+    margin: auto;
+    padding: 10%;
+}

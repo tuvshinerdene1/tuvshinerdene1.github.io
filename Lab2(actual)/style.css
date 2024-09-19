@@ -13,10 +13,6 @@ table{
     left: 0;
     right: 0;
 }
-table td, table th{
-    border: 1px solid #ddd;
-    padding: 8px;
-}
 td{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -27,4 +23,13 @@ table tr:nth-child(even){background-color: #6b7a89;}
 #menu{
     width: 30%;
     
+}
+
+button { 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%; 
+    width: 100%;
 }
