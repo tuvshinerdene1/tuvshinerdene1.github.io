@@ -20,8 +20,8 @@ html, body{
     }
 }
 .bigtable {
-    table-layout: fixed;
-    width: 100%;
+    table-layout: auto;
+    width: 100vw;
     height: 100vh;
     max-height: 100%;
     position: fixed;
@@ -48,7 +48,7 @@ html, body{
 .menu{
     height: 15%;
     font-size: 3rem;
-    overflow: hidden;
+    overflow: visible;
     text-overflow: ellipsis;
 }
 .menuButton{

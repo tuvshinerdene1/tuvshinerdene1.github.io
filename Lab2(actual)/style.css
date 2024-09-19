@@ -14,7 +14,7 @@ table{
     right: 0;
 }
 td{
-    overflow: hidden;
+    overflow: visible;
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
