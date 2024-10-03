@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./homeStyle.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+    <title>Memebook</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>&lt;Memebook&gt;</h1>
+        <a href="#">home</a>
+        <a href="#">search</a>
+        <a href="#">invite</a>
+        <a href="#">profile</a>
+        <a href="#">logout</a>
+      </header>
+      <aside>
+        <table class="searchTable">
+          <tr class="searchRow">
+            <td>
+              <input type="text" id="searchBar" />
+              <input type="submit" value="Search" id="searchButton" />
+            </td>
+          </tr>
+          <tr class="linkRow">
+            <td>
+              <ul>
+                <li><a href="#">Meme groups</a></li>
+                <li><a href="#">Meme friends</a></li>
+                <li><a href="#">Meme messages</a></li>
+                <li><a href="#">Meme contacts info</a></li>
+                <li><a href="#">Meme privacy</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </aside>
+      <section class="content">
+        <table class="pictureTable">
+          <th>
+            <table class="infoTable">
+              <th>picture</th>
+              <tr>
+                <td>
+                  <img
+                    style="display: block"
+                    width="100%"
+                    height="100%"
+                    src="./pics/meme-1.jpeg"
+                  />
+                </td>
+              </tr>
+            </table>
+          </th>
+          <tr>
+            <td>
+              <table class="choiceTable">
+                <tr>
+                  <td>
+                    <a href="#">Visualize Meme Friends</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Edit Meme Profile</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Meme Account Preferences</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Meme Privacy Preferences</a>
+                  </td>
+                </tr>
+              </table>
+              <table class="infoTable">
+                <th>Connection</th>
+                <tr>
+                  <td>This is you</td>
+                </tr>
+              </table>
+              <table class="infoTable">
+                <th>Access</th>
+                <tr>
+                  <td>
+                    This user is currently logged in from a non residential
+                    location
+                  </td>
+                </tr>
+              </table>
+              <table class="infoTable">
+                <th>Other schools</th>
+                <tr>
+                  <td>This guy isnt in any other school</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="bio">
+        <table class="Information">
+          <th>information</th>
+          <tr>
+            <tr style="font-weight: bold;"><td>Account info:</td></tr>
+              <tr><td>Name: <input type="text"></td></tr>
+              <tr><td>Member since:<input type = "date"></td></tr>
+              <tr><td>Last update: <input type="date"></td></tr>
+              <tr style="font-weight:bold;"><td>Basic info:</td><br></tr>
+              <tr><td>Email: <input type="email"></td></tr>
+              <tr><td>Status:<input type = "text"></td></tr>
+              <tr><td>Sex: <input type="checkbox" name="gender" value="male"><label for = "gender">Male</label>
+                <input type="checkbox" name="gender" value="female"><label for = "gender">Female</label></td></tr>
+            
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
