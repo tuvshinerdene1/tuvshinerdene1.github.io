@@ -20,7 +20,13 @@ main{
 header{
     background-color: aqua;
     text-align: right;
-    height: 10%;
+    height: 20%;
+}
+header a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
 }
 aside{
     padding: 5px;
@@ -28,10 +34,13 @@ aside{
     width: 20%;
     float: left;
 }
+section{
+    height: 80%;
+}
 .content{
     width: 40%;
     padding: 5px;
-    height: 100%;
+    height: 90%;
     float: left;
 }
 .bio{
@@ -44,15 +53,41 @@ aside{
     width: 60%;
 }
 .choiceTable{
-    border: 1px solid;
+    table-layout: fixed;
+    width: 100%;
+    border-style: dotted;
+    border:  1px solid;
     border-collapse: collapse;
+    padding: 40px;
 }
 .choiceTable  td, tr {
     border: 1px solid;
     width: 100%;
+    margin: 5px;
+}
+.searchTable{
+    table-layout: fixed;
+    border-style: dotted;
+    border: 1px solid;
+    border-collapse: collapse;
+    height: 100%;
+}
+.searchTable tr td{
+    border: 1px solid;
+    width: 100%;
+}
+.searchRow{
+    height: 20%;
+}
+.linkRow{
+    vertical-align: text-top;
+}
+.linkRow li{
+    margin: 10px;
 }
 .pictureTable{
     width: 100%;
+    padding: 0px;
 }
 .infoTable th{
     background-color: aqua;
@@ -60,11 +95,24 @@ aside{
 }
 .infoTable{
     width: 100%;
+    margin: 5px;
+    border: 1px solid;
+    border-collapse: collapse;
 }
 .Information th{
     background-color: aqua;
     text-align: left;
 }
 .Information{
+    height : 100%;
    width: 100%;
+   
+   border: 1px solid;
+   border-collapse: collapse;
+}
+.Information tr{
+    border: none;
+}
+ul{
+    list-style-type: none;
 }
