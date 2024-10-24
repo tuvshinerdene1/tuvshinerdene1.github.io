@@ -74,10 +74,10 @@ aside{
     }
 }
 @media(max-width: 1000px){
-    #cool{
+    .cool{
         width: 100%;
     }
-    #lame{
+    .lame{
         width:100%;
     }
 }
@@ -159,12 +159,12 @@ progress::-webkit-progress-bar{
 progress::-webkit-progress-value{
     background-color: #f61067;
 }
-#cool{
+.cool{
     margin-left: 10px;
     margin-right: 10px;
     width: 45%;
 }
-#lame{
+.lame{
     border: 2px outset green;
     background-color: white;
     color: green;
