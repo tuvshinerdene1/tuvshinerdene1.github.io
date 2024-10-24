@@ -163,6 +163,9 @@ progress::-webkit-progress-value{
     margin-left: 10px;
     margin-right: 10px;
     width: 45%;
+    border:1px outset blue;
+    background-color: #f61067;
+    color: white;
 }
 .lame{
     border: 2px outset green;
