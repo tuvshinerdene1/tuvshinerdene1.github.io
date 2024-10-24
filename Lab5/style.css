@@ -73,14 +73,6 @@ aside{
         height: 150vh;
     }
 }
-@media(max-width: 1000px){
-    .cool{
-        width: 100%;
-    }
-    .lame{
-        width:100%;
-    }
-}
 footer{
     padding: 5px;
     font-size: small;
@@ -160,9 +152,7 @@ progress::-webkit-progress-value{
     background-color: #f61067;
 }
 .cool{
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 45%;
+    width: 100%;
     border:1px outset blue;
     background-color: #f61067;
     color: white;
@@ -171,6 +161,5 @@ progress::-webkit-progress-value{
     border: 2px outset green;
     background-color: white;
     color: green;
-    margin-right: 10px;
-    width: 45%;
+    width: 100%;
 }
