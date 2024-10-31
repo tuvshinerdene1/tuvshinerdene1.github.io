@@ -35,7 +35,7 @@
         var distance = window.prompt("Enter the distance: ");
         var hour = Math.floor(distance/7);
         var minute = Math.floor(((distance%7)/7)*60);
-        var second = Math.ceil((distance - hour*7 - minute/60*7)*100/(7000/3600));
+        var second = Math.ceil((distance - hour*7 - minute/60*7)*1000/(7000/3600));
         alert(hour+ " hour(s) and "+minute+" minute(s) and "+second+" second(s)");
 
       }
