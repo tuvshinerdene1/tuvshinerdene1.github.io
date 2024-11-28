@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    /*background-color: green;*/
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    align-content:end;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size:1rem;
+    align-self: center;
+}
+header img{
+    width: 30px;
+    height: auto;
+}
+#headerLogo{
+    width: 100px;
+    height: auto;
+}
+#profilepic{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px lightblue;
+    padding-bottom: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+header input {
+    flex-grow: 1;
+    border-radius: 10em;
+    height: 25px;
+    align-self: center;
+}
+header form{
+    flex-grow: 1;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d2cf1e;
+    width: 100%;
+    height: 5rem;
+}
+.sales p{
+    align-self: center;
+}
+
+main{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.welcomeBack{
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.welcomeBack div{
+    align-content: center;
+    line-height: 1.5;
+    margin: 10px;
+}
+.welcomeBackText a{
+    text-decoration: none;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;   
+}
+.mainAd{
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: 300px;
+    background-image: url(pics/mainAd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.textBox{
+
+    padding: 10px;
+    width: 40%;
+    background-color: white;
+    box-shadow: 5px 5px  10px 4px  #0000002f;
+    font-size:large;
+}
+.textBox h1{
+    font-size:40px;
+}
+.textBox button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+.advertisementSection{
+    background-color: red;
+}
+.continueLearning{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.continueLearning h2{
+    justify-content: flex-start;
+}
+.continueLearning a{
+    margin-left: auto;
+}
+.takeCourses{
+    align-content: center;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: larger;
+}
+
+#Getudemybusiness{
+    margin-left: auto;
+    border: none;
+    background-color: white;
+    color: black;
+    height: 100%;
+    padding: 5px;
+}
+#dismiss{
+    height: 100%;
+    background-color: black;
+    border-color: white;
+    color: white;
+    padding: 5px;
+}
+.Recommendation{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.recommendationTable{
+    margin-top: 15px;
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    width: 100%;
+}
+.recommendationTableElement{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.recommendationTableElement img:hover{
+    cursor:pointer;
+}
+#topPick{
+    margin-top: 20px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;   
+}
+#recommendLabel{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.labelElement{
+    padding: 2px;
+    margin: 5px;
+    align-self:center;
+    justify-self: center;
+    height: 4rem;
+    width: 17%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    
+}
+.teachTheWorldOnline{
+    height: 5rem;
+    background-color: rgb(37, 37, 37);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: small;
+}
+.teachTheWorldOnline button{
+    margin-right: 10px;
+    height: 50%;
+}
+.topCompanies{
+    height: 5rem;
+    background-color: rgb(37, 37, 37);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50%, 50%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: small;
+
+}
+.topCompanies p{
+    grid-column: 1/2;
+}
+#imageSection{
+    grid-column: 2/3;
+    justify-content:flex-;
+}
+.topCompanies img{
+    align-self: center;
+    width: 30%;
+    height: auto;
+}
+.textbox button :hover{
+    cursor: pointer;
+}
+#Getudemybusiness :hover{
+    cursor: pointer;
+}
+#dismiss :hover{
+    cursor: pointer;
+}
+#Certification{
+    background-color:rgb(37, 37, 37);
+    color: white;
+    padding-top: 20px;
+}
+#certificationbyissuer{
+    
+}
+.certificationLinks{
+    display: grid;
+    grid-template-columns: 25%, 25%, 25%, 25%;
+    grid-template-rows: 50%, 50%;
+    padding: 30px;
+    text-wrap: wrap;
+}
+.CertificationElement{
+    color: white;
+    margin-top: 20px;
+}
+.CertificationElement a{
+    text-decoration: none;
+    color: white;
+}
+.CertificationElement ul{
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+#No1{
+    grid-column: 1;
+    grid-row:1;
+}
+#No2{
+    grid-column: 2;
+    grid-row: 1;
+}
+#No3{
+    grid-column: 3;
+    grid-row: 1;
+}
+#No4{
+    grid-column: 4;
+    grid-row: 1;
+}
+#No5{
+    grid-column: 1;
+    grid-row: 2;
+}
+#No6{
+    grid-column: 2;
+    grid-row: 2;
+}
+#No7{
+    grid-column: 3;
+    grid-row: 2;
+}
+#No8{
+    grid-column: 4;
+    grid-row: 2;
+}
+.links{
+    display: grid;
+    margin-top: 3px;
+    background-color: black;
+    grid-template-columns: 25%, 25%, 25%,25%;
+    grid-template-rows: 100%;
+    color: white;
+    padding: 30px;
+}
+#link1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#link2{
+    grid-column: 2;
+    grid-row: 1;
+}
+#link3{
+    grid-column: 3;
+    grid-row: 1;
+}
+#link4{
+    grid-column: 4;
+    grid-row: 1;
+}
+.linkelement ul{
+    margin-top: 15px;
+    list-style-type: none;
+}
+.bottomOfPage{
+    margin-top: 3px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 15% 10% 55% 20%;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.bottomOfPage img{
+    grid-column: 1;
+    height: 30px;
+    width: auto;
+}
+.bottomOfPage a{
+    text-decoration: none;
+    color: white;
+    vertical-align:middle;
+}
+.bottomOfPage p{
+    grid-column: 2;
+    vertical-align: middle;
+}
+#cookie{
+    grid-column: 3;
+}
+#english{
+    grid-column: 4;
+}

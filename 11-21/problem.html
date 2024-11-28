@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Lab 8</h1>
+
+    <button onclick="problem1()">problem1</button>
+    <button onclick="problem2()">problem2</button>
+    <button onclick="problem3()">problem3</button>
+    <button onclick="resetCounter()">reset count</button>
+
+    <script>
+      
+      function problem1() {
+        var number = window.prompt("Enter the number :", "0");
+        alert("Factorial of "+number+" is "+factorial(number));
+      };
+      function factorial(n){
+        if(n > 1){
+            return n * factorial(n-1);
+        }
+        else {
+            return 1;
+        };
+      };
+      /*function problem2() {
+        var sec = 30;
+        var timer = setInterval(function(){
+            document.getElementById("problem2").innerHTML = sec;
+            sec--;
+        }, 1000);
+        if(sec == 0){
+            return;
+        }
+      }*/
+     let timer = null;
+      function problem2(){
+        let remaining = 30;
+        var element = document.getElementById("problem2");
+        if(timer){
+            clearInterval(timer);
+            timer = null;
+            element.innerHTML = "Stopped the timer";
+            return;
+        }
+        timer = setInterval(function(){
+            if(remaining <= 0){
+                clearInterval(timer);
+                element.innerHTML = "time is up";
+                timer = null;
+            }
+            else{
+                element.innerHTML = remaining;
+                remaining --;
+            }
+        }, 1000);
+      }
+      
+      var visitCount = localStorage.getItem("page_view");
+      if(visitCount){
+        visitCount = Number(visitCount)+1;
+        localStorage.setItem("page_view",visitCount);
+      }
+      else{
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+      }
+      function problem3(){
+        alert("you visited "+visitCount);
+      }
+      function resetCounter(){
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+      }
+    </script>
+    <p id="problem2">0</p>
+  </body>
+</html>
