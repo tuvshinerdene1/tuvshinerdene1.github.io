@@ -357,6 +357,13 @@ main{
 .recommendationTableElement p:nth-last-of-type(-n+2) {
     font-weight: bold;
 }
+.RecommendationLabel{
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 #topPick{
     margin-top: 20px;
     border: 1px solid gray;
@@ -376,8 +383,11 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    
 }
 .labelElement{
+    display: flex;
     padding: 2px;
     margin: 5px;
     align-self:center;
@@ -385,13 +395,14 @@ main{
     height: 4rem;
     width: 17%;
     border: 1px solid;
-    display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     text-align: center;
     font-weight: 900;
-    font-size: 100%;
+    font-size: 1.2rem;
+}
+.labelElement :hover{
+    cursor: pointer;
 }
 
 .teachTheWorldOnline{
@@ -440,6 +451,8 @@ main{
     cursor: pointer;
 }
 #Certification{
+    font-size: 1.5rem;
+    line-height: 1.5;
     background-color:rgb(37, 37, 37);
     color: white;
     padding-top: 20px;
@@ -507,6 +520,8 @@ main{
     grid-template-rows: 100%;
     color: white;
     padding: 30px;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 #link1{
     grid-column: 1;
@@ -530,17 +545,21 @@ main{
 }
 .bottomOfPage{
     margin-top: 3px;
+    height: 10%;
     background-color: black;
     display: grid;
     grid-template-columns: 15% 10% 55% 20%;
     justify-content: center;
     color: white;
     text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+
 }
 .bottomOfPage img{
     grid-column: 1;
-    height: 30px;
-    width: auto;
+    width: 20%;
+    height: auto;
 }
 .bottomOfPage a{
     text-decoration: none;
