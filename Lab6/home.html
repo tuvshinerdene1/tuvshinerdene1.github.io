@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     <title>Lab6</title>
+    <script src="./index.js"></script>
+    <link href="https://fontawesome.com/icons/heart?f=classic&s=regular">
+    <link rel="icon" href="./pics/logo1.png" type="image/png">
+    
 </head>
 <body>
     <div class="sales">
@@ -12,43 +16,49 @@
         <p>1 day left!</p>
     </div>
     <header>
-        <a href="#"><img src="./pics/Udemy (2021) Logo (PNG720p) - Vector69Com.png" id="headerLogo"></a>
-        <a href="#">categories</a>
-        <div class="search">
-            <form action="#">
-                <input type="text" placeholder="Search Courses" name="search">
-                <button>
-                    <i class="searchButton"></i>
-                </button>
-            </form>
+        <nav class="nav-header">
+            <a href="#"><img src="./pics/Udemy (2021) Logo (PNG720p) - Vector69Com.png" id="headerLogo"></a>
+            <a href="#">categories</a>
+            <div class="nav-item search-form-container">
+                <form action="#">
+                    <input type="text" placeholder="Search Anything" name="search">
+                    <button>
+                        <i class="searchButton"></i>
+                    </button>
+                </form>
 
-        </div>
-        <a href="#">Teach on Udemy</a>
-        <a href="#">My learning</a>
-        <a href="#"><img src="./pics/heart.png" alt="heart"></a>
-        <a href="#"><img src="./pics/shopping-cart.png" alt="shopping cart"></a>
-        <a href="#"><img src="./pics/bell.png" alt="bell"></a>
-        <a href="#" id="profilepic">TE</a>
+            </div>
+            <a href="#">Teach on Udemy</a>
+            <a href="#">My learning</a>
+            <a href="#"><img src="./pics/heart.png" alt="heart"></a>
+            <!--<a href="#"><i class="fa-regular fa-heart"></i></a>-->
+            
+            <a href="#"><img src="./pics/shopping-cart.png" alt="shopping cart"></a>
+            <a href="#"><img src="./pics/bell.png" alt="bell"></a>
+            <a href="#" id="profilepic">TE</a>
+        </nav>
+        <nav class="nav-options">
+            <a href="#">Development</a>
+            <a href="#">Business</a>
+            <a href="#">Finance&Accounting</a>
+            <a href="#">IT&Software</a>
+            <a href="#">Office Productivity</a>
+            <a href="#">Personal Development</a>
+            <a href="#">Design</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Development</a>
-        <a href="#">Business</a>
-        <a href="#">Finance&Accounting</a>
-        <a href="#">IT&Software</a>
-        <a href="#">Office Productivity</a>
-        <a href="#">Personal Development</a>
-        <a href="#">Design</a>
-    </nav>
+    
     <main>
-        <section>
+        <section id="mainSection">
             <div class="welcomeBack">
-                <img id="profile picture" >
-                <div class="circle"></div>
+                <a href="#" id="profilepic">TE</a>
+                <!--<div class="circle">-->
                 <div class="welcomeBackText">
                     <h1>Welcome back, User</h1>
-                    <a href="#">Add occupation and interests</a>
+                    <a href="#" class="purpleA">Add occupation and interests</a>
                 </div> 
+            </div>
             </div>
             <div class="mainAd">
                 <div class="textBox">
@@ -56,7 +66,7 @@
                     <p>Subscribe to a collection of our top courses in Javascript, CSS, React,
                         and more with Personal Plan
                     </p>
-                    <button>
+                    <button class="btn">
                         <b>Try it free</b>
                     </button>
                 </div>
@@ -68,450 +78,453 @@
 
             <div class="continueLearning">
                 <h2>Let's start learning</h2>
-                <a href="#">My learning</a>
+                <a href="#" class="purpleA">My learning</a>
             </div>
 
             <div class="takeCourses">
-                    Training 2 or more people? Get your team access to Udemy's top
-                    27,000+ Courses
+                    <p>Training 2 or more people? Get your team access to Udemy's top
+                        27,000+ Courses</p>
                     <button id="Getudemybusiness">Get Udemy Business</button>
                     <button id="dismiss">Dismiss</button>
             </div>
-            <div class="Recommendation">
-                <h2>What to learn next</h2>
-                <p>Because you viewed "<a href="#">Programming Design Patterns For Unity: Write Better Code</a>"</p>                
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/rpg.jpg">
-                        <b>Unity 3rd Person Combat & Traversal</b>
-                        <p>GameDev.tv Team, Nathan Farrer</p>
-                        <p>4.8</p>
-                        <p>$9.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/What_to_learn_next/1.jpg">
-                        <b>Unreal Engine 5 C++ course</b>
-                        <p>Stephen Ulibarri</p>
-                        <p>4.7</p>
-                        <p>$59.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/What_to_learn_next/2.jpg">
-                        <b>The ultimate unreal engine 2D</b>
-                        <p>Cobra Code </p>
-                        <p>4.5</p>
-                        <p>$59.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/What_to_learn_next/3.jpg">
-                        <b>Complete C# Unity Game Developer 3D</b>
-                        <p>Rick Davidson, GameDev.tv Team</p>
-                        <p>4.7</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/What_to_learn_next/R.jpg">
-                        <b>The Ultimate Guide to Game development</b>
-                        <p>Jonathan Weinberger, Unity Technologies</p>
-                        <p>4.6</p>
-                        <p>$74.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Our top pick for you</h2>
-                <div id="topPick">
-                    
-                        <img src="./pics/TopPick.jpg">
-                        <div id="topPickText">
-                            <h2>100 Days of Code: The Complete Python Pro Bootcamp</h2>
-                            <p>Master Python by building 100 projects in 100 days. Learn data science, automation, build websites,
-                                games and apps!
-                            </p>
-                            <p>By Dr.Angela Yu, Developer and Lead Instructor</p>
-                            <p>Updated November 2024 56.5 total hours-592 lectures-All levels</p>
-                            <p>4.7 Bestseller</p>
-                            <p>$11.99</p>
+            <div class="recommendationSection">
+                <div class="Recommendation">
+                    <h2>What to learn next</h2>
+                    <p>Because you viewed "<a href="#">Programming Design Patterns For Unity: Write Better Code</a>"</p>                
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/rpg.jpg">
+                            <b>Unity 3rd Person Combat & Traversal</b>
+                            <p>GameDev.tv Team, Nathan Farrer</p>
+                            <p>4.8</p>
+                            <p>$9.99</p>
                         </div>
-                    
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Recommended for you</h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/RecommendedForYou/dungeon.jpg">
-                        <b>Unity 2D Dungeon Gunner Roguelike</b>
-                        <p>Rob Ager</p>
-                        <p>4.7</p>
-                        <p>$54.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/RecommendedForYou/c.jpg">
-                        <b>Unity C# for Unity game development</b>
-                        <p>Raja Biswas, Charger Games</p>
-                        <p>4.7</p>
-                        <p>$79.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/RecommendedForYou/combat.jpg">
-                        <b>RPG Core combat Creator</b>
-                        <p>Ben Tristem, Rick Davidson</p>
-                        <p>4.6</p>
-                        <p>$69.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/RecommendedForYou/multiplayer.jpg">
-                        <b>Make Online Games using Unity</b>
-                        <p>GameDev.tv Team, Nathan Farrer</p>
-                        <p>4.8</p>
-                        <p>$9.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/RecommendedForYou/hollow.jpg"">
-                        <b>Unity 2D Game Developer Course</b>
-                        <p>Rob Ager</p>
-                        <p>4.5</p>
-                        <p>$49.99</p>
+                        <div class="recommendationTableElement">
+                            <img src="pics/What_to_learn_next/1.jpg">
+                            <b>Unreal Engine 5 C++ course</b>
+                            <p>Stephen Ulibarri</p>
+                            <p>4.7</p>
+                            <p>$59.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/What_to_learn_next/2.jpg">
+                            <b>The ultimate unreal engine 2D</b>
+                            <p>Cobra Code </p>
+                            <p>4.5</p>
+                            <p>$59.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/What_to_learn_next/3.jpg">
+                            <b>Complete C# Unity Game Developer 3D</b>
+                            <p>Rick Davidson, GameDev.tv Team</p>
+                            <p>4.7</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/What_to_learn_next/R.jpg">
+                            <b>The Ultimate Guide to Game development</b>
+                            <p>Jonathan Weinberger, Unity Technologies</p>
+                            <p>4.6</p>
+                            <p>$74.99</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-             <div class="Recommendation">
-                <h2>Recommended to you based on ratings</h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/BasedOnRatings/Blender.jpg">
-                        <b>Complete Blender Creator: Learn 3D modelling</b>
-                        <p>GameDev.tv Team, Grant Abbitt</p>
-                        <p>4.7</p>
-                        <p>$139.99</p>
+                <div class="Recommendation">
+                    <h2>Our top pick for you</h2>
+                    <div id="topPick">
+                        
+                            <img src="./pics/TopPick.jpg">
+                            <div id="topPickText">
+                                <h2>100 Days of Code: The Complete Python Pro Bootcamp</h2>
+                                <p>Master Python by building 100 projects in 100 days. Learn data science, automation, build websites,
+                                    games and apps!
+                                </p>
+                                <p>By Dr.Angela Yu, Developer and Lead Instructor</p>
+                                <p>Updated November 2024 56.5 total hours-592 lectures-All levels</p>
+                                <p>4.7 Bestseller</p>
+                                <p>$11.99</p>
+                            </div>
+                        
                     </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/BasedOnRatings/Unity.jpg">
-                        <b>Ultimate Unity Overview(70+ Tools and features)</b>
-                        <p>Code Monkey</p>
-                        <p>4.9</p>
-                        <p>$74.99</p>
+                </div>
+                <div class="Recommendation">
+                    <h2>Recommended for you</h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/RecommendedForYou/dungeon.jpg">
+                            <b>Unity 2D Dungeon Gunner Roguelike</b>
+                            <p>Rob Ager</p>
+                            <p>4.7</p>
+                            <p>$54.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/RecommendedForYou/c.jpg">
+                            <b>Unity C# for Unity game development</b>
+                            <p>Raja Biswas, Charger Games</p>
+                            <p>4.7</p>
+                            <p>$79.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/RecommendedForYou/combat.jpg">
+                            <b>RPG Core combat Creator</b>
+                            <p>Ben Tristem, Rick Davidson</p>
+                            <p>4.6</p>
+                            <p>$69.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/RecommendedForYou/multiplayer.jpg">
+                            <b>Make Online Games using Unity</b>
+                            <p>GameDev.tv Team, Nathan Farrer</p>
+                            <p>4.8</p>
+                            <p>$9.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/RecommendedForYou/hollow.jpg"">
+                            <b>Unity 2D Game Developer Course</b>
+                            <p>Rob Ager</p>
+                            <p>4.5</p>
+                            <p>$49.99</p>
+                        </div>
                     </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/BasedOnRatings/Godot.jpg">
-                        <b>Jumpstart to 2D Game Development: Godot 4.3 for Beginners</b>
-                        <p>Richard Allbert</p>
-                        <p>4.9</p>
-                        <p>$59.99</p>
+                </div>
+                 <div class="Recommendation">
+                    <h2>Recommended to you based on ratings</h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/BasedOnRatings/Blender.jpg">
+                            <b>Complete Blender Creator: Learn 3D modelling</b>
+                            <p>GameDev.tv Team, Grant Abbitt</p>
+                            <p>4.7</p>
+                            <p>$139.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/BasedOnRatings/Unity.jpg">
+                            <b>Ultimate Unity Overview(70+ Tools and features)</b>
+                            <p>Code Monkey</p>
+                            <p>4.9</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/BasedOnRatings/Godot.jpg">
+                            <b>Jumpstart to 2D Game Development: Godot 4.3 for Beginners</b>
+                            <p>Richard Allbert</p>
+                            <p>4.9</p>
+                            <p>$59.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/BasedOnRatings/unity3d.png">
+                            <b>The Complete Guide to Unity 3D</b>
+                            <p>Alex Dev</p>
+                            <p>4.9</p>
+                            <p>$89.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/BasedOnRatings/ai.jpg">
+                            <b>Beginner's Guide to AI</b>
+                            <p>Penny de Byl, Penny Holistic3D</p>
+                            <p>4.3</p>
+                            <p>$89.99</p>
+                        </div>
                     </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/BasedOnRatings/unity3d.png">
-                        <b>The Complete Guide to Unity 3D</b>
-                        <p>Alex Dev</p>
-                        <p>4.9</p>
-                        <p>$89.99</p>
+                </div>
+                <div class="Recommendation ">
+                    <h2>Because you searched for "<a href="#">unity</a>"</h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/SearchedforUnity/rpgCore.jpg">
+                            <b>RPG Core Combat Creator: Learn Intermediate Unity C# Coding</b>
+                            <p>Ben Tristem, Rick Davidson, GameDev.tv Team</p>
+                            <p>4.7</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/SearchedforUnity/ai.jpg">
+                            <b>Beginner's Guide to AI(Unity 6 Compatible)</b>
+                            <p>Penny de Byl, Penny Hollistic 3D</p>
+                            <p>4.3</p>
+                            <p>$54.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/SearchedforUnity/rpggame.jpg">
+                            <b>Learn To create an rpg Game in Unity</b>
+                            <p>James Doyle</p>
+                            <p>4.6</p>
+                            <p>$69.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/SearchedforUnity/ar.jpg">
+                            <b>Augmented Reality in Depth 101</b>
+                            <p>Debayan Dey</p>
+                            <p>4.6</p>
+                            <p>$19.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/SearchedforUnity/shader.jpg">
+                            <b>Shader Development from Scratch for Unity (6 Compatible)</b>
+                            <p>Penny de Byl, Penny</p>
+                            <p>4.8</p>
+                            <p>$9.99</p>
+                        </div>
                     </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/BasedOnRatings/ai.jpg">
-                        <b>Beginner's Guide to AI</b>
-                        <p>Penny de Byl, Penny Holistic3D</p>
-                        <p>4.3</p>
-                        <p>$89.99</p>
+                </div>
+                <div class="Recommendation">
+                    <h2>Learners are viewing</h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/LearneersAreViewing/aws.png">
+                            <b>Ultimate AWS Certified Solutions Architect Associate SAA-CO3</b>
+                            <p>Stephane Maarek | AWS Certified</p>
+                            <p>4.7</p>
+                            <p>$84.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/LearneersAreViewing/machinelearning.jpg">
+                            <b>Machine Learning A-Z:AI, Python &R</b>
+                            <p>Kirill Eremenko, Hadelin de Ponteves</p>
+                            <p>4.5</p>
+                            <p>$89.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/LearneersAreViewing/powerbi.jpg">
+                            <b>Microsoft Power BI Desktop for Business Intelligence</b>
+                            <p>Maven Analytics, Chriss Dutton, Aaron Parry</p>
+                            <p>4.6</p>
+                            <p>$79.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/LearneersAreViewing/completeWeb.png">
+                            <b>Complete web development course</b>
+                            <p>Hitesh Choudhary</p>
+                            <p>4.7</p>
+                            <p>$44.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/LearneersAreViewing/image_750x_644e6e8a6d058.jpg">
+                            <b>PMP Certification Exam Prep Course 35 PDU Contach Hours/PDU</b>
+                            <p>TIA Education, Andrew Ramdayal</p>
+                            <p>4.7</p>
+                            <p>$84.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Recommendation">
+                    <h2>Because you enrolled in "<a href="#">Unity C# Mobile Game Development: Make 3 Games From Scratch</a>"</h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/becauseYouEnroll/lowpoly.jpg">
+                            <b>Low Poly Characters: Blender Bitesize Course</b>
+                            <p>GameDev.tv Team, Grant Abbitt</p>
+                            <p>4.6</p>
+                            <p>$54.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/becauseYouEnroll/unitymobile.jpg">
+                            <b>Unity Mobile Game Development</b>
+                            <p>Mario Korov</p>
+                            <p>4.8</p>
+                            <p>$59.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/becauseYouEnroll/drawing.jpg">
+                            <b>Complete Drawing Course: Create Video game concept art</b>
+                            <p>GameDev.tv Team, Nathan Farrer</p>
+                            <p>4.8</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/becauseYouEnroll/rpg.jpg">
+                            <b>Create a RPG Game in Unity</b>
+                            <p>Pete Jepson</p>
+                            <p>4.3</p>
+                            <p>$59.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/becauseYouEnroll/monkey.jpg">
+                            <b>Learn to make an Awesome Builder-Defender game in Unity!</b>
+                            <p>Code Monkey</p>
+                            <p>4.8</p>
+                            <p>$69.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Recommendation">
+                    <h2>Featured courses in <a>Unity</a></h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/FeaturedCoursesInUnity/no1.jpg">
+                            <b>Unity Game Development : Create 2D and 3D games with C#</b>
+                            <p>Awesome Tuts</p>
+                            <p>4.5</p>
+                            <p>$54.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/FeaturedCoursesInUnity/no2.jpg">
+                            <b>Unity 2D Game Developer Course Farming RPG</b>
+                            <p>Rob Ager</p>
+                            <p>4.5</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/FeaturedCoursesInUnity/no3.jpg">
+                            <b>The Unity C# Surival Guide</b>
+                            <p>Jonathan Weinberger, Unity Technologies</p>
+                            <p>4.8</p>
+                            <p>$9.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/FeaturedCoursesInUnity/no4.jpg">
+                            <b>Unity 3rd Person Combat & Traversal</b>
+                            <p>GameDev.tv Team, Nathan Farrer</p>
+                            <p>4.8</p>
+                            <p>$9.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/FeaturedCoursesInUnity/no5.jpg">
+                            <b>Learn to Code By Making a 2D Platformer in Unity& C#</b>
+                            <p>James Doyle</p>
+                            <p>4.6</p>
+                            <p>$74.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Recommendation">
+                    <h2>Short and sweet courses for you</h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/shortAndSweet/no1.jpg">
+                            <b>A Complete Guide to Unity's Universal Render Pipeline, URP</b>
+                            <p>Nicholas Lever</p>
+                            <p>3.9</p>
+                            <p>$39.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/shortAndSweet/no2.jpg">
+                            <b>Android Game Development: Endless Runner Game in Android</b>
+                            <p>Sandip Bhattacharya</p>
+                            <p>4.5</p>
+                            <p>$49.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/shortAndSweet/no3.jpg">
+                            <b>Game AI Fundamentals with Godot Engine</b>
+                            <p>Narayana Walters</p>
+                            <p>4.6</p>
+                            <p>$24.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/shortAndSweet/no4.jpg">
+                            <b>Make Visual Novels with Ren'Py</b>
+                            <p>Elaine M.Podosek</p>
+                            <p>4.2</p>
+                            <p>$34.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/shortAndSweet/no5.jpg">
+                            <b>Unity Hyper Casual Game- Exploring Hexa Sort Mechanics</b>
+                            <p>Tabsil Makes Games</p>
+                            <p>4.7</p>
+                            <p>$44.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Recommendation">
+                    <h2>Top courses in <a>Game Development</a></h2>
+                    <div class="recommendationTable">
+                        <div class="recommendationTableElement">
+                            <img src="pics/topcourses/no1.jpg">
+                            <b>Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games</b>
+                            <p>Ben Tristem, GameDev.tv Team</p>
+                            <p>4.6</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/topcourses/no2.jpg">
+                            <b>Unreal Engine 5: The Complete Beginner's Course</b>
+                            <p>David Nixon</p>
+                            <p>4.6</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/topcourses/no3.jpg">
+                            <b>All about gaming industry careers & game design fundamentals</b>
+                            <p>VICONIC  Development</p>
+                            <p>4.4</p>
+                            <p>$54.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/topcourses/no4.jpg">
+                            <b>Develop Minecraft Plugins(Java)</b>
+                            <p>Stephen King</p>
+                            <p>4.7</p>
+                            <p>$74.99</p>
+                        </div>
+                        <div class="recommendationTableElement">
+                            <img src="pics/topcourses/no5.jpg">
+                            <b>Master Lua Programming and Create Amazing Games with Love</b>
+                            <p>Kyle Schaub</p>
+                            <p>4.7</p>
+                            <p>$74.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="RecommendationLabel">
+                    <h2>Topics recommended for you</h2>
+                    <div id="recommendLabel">
+                        <div class="labelElement">
+                           <span>Unity</span> 
+                        </div>
+                        <div class="labelElement">
+                            <span>Game Development Fundamentals</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>Android Game Development</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>Mobile Game Development</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>C#(programming language)</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>2D Game Development</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>ASP.NET Core</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>3D Game Development</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>Game Design</span>
+                        </div>
+                        <div class="labelElement">
+                            <span>.NET</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="Recommendation ">
-                <h2>Because you searched for "<a href="#">unity</a>"</h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/SearchedforUnity/rpgCore.jpg">
-                        <b>RPG Core Combat Creator: Learn Intermediate Unity C# Coding</b>
-                        <p>Ben Tristem, Rick Davidson, GameDev.tv Team</p>
-                        <p>4.7</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/SearchedforUnity/ai.jpg">
-                        <b>Beginner's Guide to AI(Unity 6 Compatible)</b>
-                        <p>Penny de Byl, Penny Hollistic 3D</p>
-                        <p>4.3</p>
-                        <p>$54.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/SearchedforUnity/rpggame.jpg">
-                        <b>Learn To create an rpg Game in Unity</b>
-                        <p>James Doyle</p>
-                        <p>4.6</p>
-                        <p>$69.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/SearchedforUnity/ar.jpg">
-                        <b>Augmented Reality in Depth 101</b>
-                        <p>Debayan Dey</p>
-                        <p>4.6</p>
-                        <p>$19.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/SearchedforUnity/shader.jpg">
-                        <b>Shader Development from Scratch for Unity (6 Compatible)</b>
-                        <p>Penny de Byl, Penny</p>
-                        <p>4.8</p>
-                        <p>$9.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Learners are viewing</h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/LearneersAreViewing/aws.png">
-                        <b>Ultimate AWS Certified Solutions Architect Associate SAA-CO3</b>
-                        <p>Stephane Maarek | AWS Certified</p>
-                        <p>4.7</p>
-                        <p>$84.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/LearneersAreViewing/machinelearning.jpg">
-                        <b>Machine Learning A-Z:AI, Python &R</b>
-                        <p>Kirill Eremenko, Hadelin de Ponteves</p>
-                        <p>4.5</p>
-                        <p>$89.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/LearneersAreViewing/powerbi.jpg">
-                        <b>Microsoft Power BI Desktop for Business Intelligence</b>
-                        <p>Maven Analytics, Chriss Dutton, Aaron Parry</p>
-                        <p>4.6</p>
-                        <p>$79.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/LearneersAreViewing/completeWeb.png">
-                        <b>Complete web development course</b>
-                        <p>Hitesh Choudhary</p>
-                        <p>4.7</p>
-                        <p>$44.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/LearneersAreViewing/image_750x_644e6e8a6d058.jpg">
-                        <b>PMP Certification Exam Prep Course 35 PDU Contach Hours/PDU</b>
-                        <p>TIA Education, Andrew Ramdayal</p>
-                        <p>4.7</p>
-                        <p>$84.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Because you enrolled in "<a href="#">Unity C# Mobile Game Development: Make 3 Games From Scratch</a>"</h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/becauseYouEnroll/lowpoly.jpg">
-                        <b>Low Poly Characters: Blender Bitesize Course</b>
-                        <p>GameDev.tv Team, Grant Abbitt</p>
-                        <p>4.6</p>
-                        <p>$54.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/becauseYouEnroll/unitymobile.jpg">
-                        <b>Unity Mobile Game Development</b>
-                        <p>Mario Korov</p>
-                        <p>4.8</p>
-                        <p>$59.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/becauseYouEnroll/drawing.jpg">
-                        <b>Complete Drawing Course: Create Video game concept art</b>
-                        <p>GameDev.tv Team, Nathan Farrer</p>
-                        <p>4.8</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/becauseYouEnroll/rpg.jpg">
-                        <b>Create a RPG Game in Unity</b>
-                        <p>Pete Jepson</p>
-                        <p>4.3</p>
-                        <p>$59.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/becauseYouEnroll/monkey.jpg">
-                        <b>Learn to make an Awesome Builder-Defender game in Unity!</b>
-                        <p>Code Monkey</p>
-                        <p>4.8</p>
-                        <p>$69.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Featured courses in <a>Unity</a></h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/FeaturedCoursesInUnity/no1.jpg">
-                        <b>Unity Game Development : Create 2D and 3D games with C#</b>
-                        <p>Awesome Tuts</p>
-                        <p>4.5</p>
-                        <p>$54.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/FeaturedCoursesInUnity/no2.jpg">
-                        <b>Unity 2D Game Developer Course Farming RPG</b>
-                        <p>Rob Ager</p>
-                        <p>4.5</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/FeaturedCoursesInUnity/no3.jpg">
-                        <b>The Unity C# Surival Guide</b>
-                        <p>Jonathan Weinberger, Unity Technologies</p>
-                        <p>4.8</p>
-                        <p>$9.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/FeaturedCoursesInUnity/no4.jpg">
-                        <b>Unity 3rd Person Combat & Traversal</b>
-                        <p>GameDev.tv Team, Nathan Farrer</p>
-                        <p>4.8</p>
-                        <p>$9.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/FeaturedCoursesInUnity/no5.jpg">
-                        <b>Learn to Code By Making a 2D Platformer in Unity& C#</b>
-                        <p>James Doyle</p>
-                        <p>4.6</p>
-                        <p>$74.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Short and sweet courses for you</h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/shortAndSweet/no1.jpg">
-                        <b>A Complete Guide to Unity's Universal Render Pipeline, URP</b>
-                        <p>Nicholas Lever</p>
-                        <p>3.9</p>
-                        <p>$39.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/shortAndSweet/no2.jpg">
-                        <b>Android Game Development: Endless Runner Game in Android</b>
-                        <p>Sandip Bhattacharya</p>
-                        <p>4.5</p>
-                        <p>$49.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/shortAndSweet/no3.jpg">
-                        <b>Game AI Fundamentals with Godot Engine</b>
-                        <p>Narayana Walters</p>
-                        <p>4.6</p>
-                        <p>$24.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/shortAndSweet/no4.jpg">
-                        <b>Make Visual Novels with Ren'Py</b>
-                        <p>Elaine M.Podosek</p>
-                        <p>4.2</p>
-                        <p>$34.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/shortAndSweet/no5.jpg">
-                        <b>Unity Hyper Casual Game- Exploring Hexa Sort Mechanics</b>
-                        <p>Tabsil Makes Games</p>
-                        <p>4.7</p>
-                        <p>$44.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Recommendation">
-                <h2>Top courses in <a>Game Development</a></h2>
-                <div class="recommendationTable">
-                    <div class="recommendationTableElement">
-                        <img src="pics/topcourses/no1.jpg">
-                        <b>Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games</b>
-                        <p>Ben Tristem, GameDev.tv Team</p>
-                        <p>4.6</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/topcourses/no2.jpg">
-                        <b>Unreal Engine 5: The Complete Beginner's Course</b>
-                        <p>David Nixon</p>
-                        <p>4.6</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/topcourses/no3.jpg">
-                        <b>All about gaming industry careers & game design fundamentals</b>
-                        <p>VICONIC  Development</p>
-                        <p>4.4</p>
-                        <p>$54.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/topcourses/no4.jpg">
-                        <b>Develop Minecraft Plugins(Java)</b>
-                        <p>Stephen King</p>
-                        <p>4.7</p>
-                        <p>$74.99</p>
-                    </div>
-                    <div class="recommendationTableElement">
-                        <img src="pics/topcourses/no5.jpg">
-                        <b>Master Lua Programming and Create Amazing Games with Love</b>
-                        <p>Kyle Schaub</p>
-                        <p>4.7</p>
-                        <p>$74.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="RecommendationLabel">
-                <h2>Topics recommended for you</h2>
-                <div id="recommendLabel">
-                    <div class="labelElement">
-                       <span>Unity</span> 
-                    </div>
-                    <div class="labelElement">
-                        <span>Game Development Fundamentals</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>Android Game Development</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>Mobile Game Development</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>C#(programming language)</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>2D Game Development</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>ASP.NET Core</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>3D Game Development</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>Game Design</span>
-                    </div>
-                    <div class="labelElement">
-                        <span>.NET</span>
-                    </div>
-                </div>
-            </div>
+            
+            
         </section>
     </main>
     <footer>
+
         <div class="teachTheWorldOnline">
             <div>
-                <p style="font-size: medium;">Teach the world online</p>
-                <p style="font-size: smaller;">Create an online video course, reach students across the globe, and earn money</p>
+                <p style="font-weight: 900;">Teach the world online</p>
+                <p>Create an online video course, reach students across the globe, and earn money</p>
             </div>
             
-            <button>teach on udemy</button>
+            <button id="dismiss">teach on udemy</button>
         </div>
+
         <div class="topCompanies">
-            <p>Top companies choose <a href="#">Udemy Business</a> to build in-demand career skills.</p>
-            <div id="imageSection">
-                <img id="company1" src="pics/companyLogos/PikPng.com_nasdaq-logo-png_4172451.png">
-                <img id="company2">
-                <img id="company3">
-                <img id="company4">
-                <img id="company5">
-            </div>
+            <p>Top companies choose <a href="#" class="purpleA">Udemy Business</a> to build in-demand career skills.</p>
+            <div class="companyLogo">
+                <img  src="pics/companyLogos/PikPng.com_nasdaq-logo-png_4172451.png">
+            </div> 
         </div>
+
         <div id="Certification">
             <p>Explore top skills and certifications</p>
             <div class="certificationLinks">

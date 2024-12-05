@@ -47,7 +47,7 @@ const initGame = (button, clickedLetter) => {
         })
     }
     else{
-        console.log(clickedLetter, " exists in the word");
+        console.log(clickedLetter, " doesnt exists in the word");
         wrongGuessCount++;
         hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
     }
