@@ -209,9 +209,7 @@ main{
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.mainSection{
 
-}
 .welcomeBack{
     padding: 20px;
     margin-bottom: 10px;
@@ -461,9 +459,6 @@ main{
     background-color:rgb(37, 37, 37);
     color: white;
     padding-top: 20px;
-}
-#certificationbyissuer{
-    
 }
 .certificationLinks{
     display: grid;
