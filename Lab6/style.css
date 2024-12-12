@@ -548,6 +548,9 @@ main{
     margin-top: 15px;
     list-style-type: none;
 }
+.linkelement ul li a{
+    color: white;
+}
 .bottomOfPage{
     margin-top: 3px;
     height: 10%;
