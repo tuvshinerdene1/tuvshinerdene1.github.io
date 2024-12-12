@@ -1,9 +1,12 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import { World } from './world';
+
 //renderer setup
 const renderer = new THREE.WebGLRenderer();
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x80a0e0);
 document.body.appendChild(renderer.domElement);
 
 //camera setup
@@ -13,19 +16,24 @@ camera.lookAt(0,0,0);
 
 
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0,0,0);
+controls.update();
 
 //Scene setup
 const scene = new THREE.Scene();
-//cube is represented as a mesh, mesh is combination of geometry and material
-const geometry = new THREE.BoxGeometry();
+//const world = new World(); 
 
-//basic material doesnt have shading
-//const material = new THREE.MeshBasicMaterial({color: 0x00d000});
+const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshLambertMaterial({color: 0x00d000});
+
 const cube = new THREE.Mesh(geometry, material);
+cube.position.set(0,0,0);
+
+
+//cube is represented as a mesh, mesh is combination of geometry and material
+//const geometry = new THREE.BoxGeometry();
 
 scene.add(cube);
-
 
 function setupLights() {
   const light1 = new THREE.DirectionalLight();
@@ -41,7 +49,6 @@ function setupLights() {
   scene.add(ambient);
 }
 
-
 //render loop
 function animate(){
   requestAnimationFrame(animate);
@@ -56,7 +63,6 @@ window.addEventListener('resize',() => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
 
 setupLights();
 animate();
