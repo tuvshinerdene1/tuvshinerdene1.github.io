@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #0a0f0d;
+    color: #d6d3c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #3a3a3a;
+    background: radial-gradient(circle, #0d1e1b, #080d0b);
+    box-shadow: 0 0 15px #1e352f, 0 0 30px #0b1914 inset;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #68c4a4;
+    text-shadow: 0 0 5px #3a9d89, 0 0 15px #1e604e;
+    margin-bottom: 20px;
+}
+
+/* Main Text */
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #d6d3c5;
+    text-shadow: 0 0 5px #3a3a3a;
+}
+
+/* Button */
+main button {
+    background-color: #68c4a4;
+    color: #0a0f0d;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #3a9d89;
+    transition: all 0.3s ease-in-out;
+}
+
+main button:hover {
+    background-color: #3a9d89;
+    color: #d6d3c5;
+    box-shadow: 0 0 15px #68c4a4, 0 0 30px #1e604e inset;
+}
+
+/* Footer */
+footer p {
+    font-size: 0.9rem;
+    color: #828282;
+    margin-top: 20px;
+    text-shadow: 0 0 3px #3a3a3a;
+}

@@ -1,0 +1,120 @@
+
+body {
+    background-color: #0a0f0d;
+    color: #d6d3c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column; 
+    min-height: 90vh;
+    padding: 2%;
+    text-align: center;
+    background: radial-gradient(circle, #0d1e1b, #080d0b);
+    border: 2px solid #3a3a3a;
+    box-shadow: 0 0 15px #1e352f, 0 0 30px #0b1914 inset;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #68c4a4;
+    text-shadow: 0 0 5px #3a9d89, 0 0 15px #1e604e;
+    margin-bottom: 20px;
+}
+
+.container h1 img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+.container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #68c4a4, #3a9d89);
+    color: #0a0f0d;
+    font-size: 1rem;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #68c4a4;
+    transition: all 0.3s ease-in-out;
+}
+
+.container button img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.container button:hover {
+    background: linear-gradient(90deg, #3a9d89, #1e604e);
+    color: #d6d3c5;
+    box-shadow: 0 0 15px #68c4a4, 0 0 30px #1e604e inset;
+}
+
+
+.notes-container {
+    flex-grow: 1;
+    margin-top: 20px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #1e352f;
+    color: #d6d3c5;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #3a9d89;
+    outline: none;
+    text-shadow: 0 0 3px #3a9d89;
+    resize: vertical;
+    text-align: left; 
+}
+
+
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.input-box img:hover {
+    transform: scale(1.2);
+}
+
+
+footer p {
+    font-size: 0.8rem;
+    color: #828282;
+    margin-top: 20px;
+    text-shadow: 0 0 3px #3a3a3a;
+}
+
+.embed-fungen {
+    display: block;
+}

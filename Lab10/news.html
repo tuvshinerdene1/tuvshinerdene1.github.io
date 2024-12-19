@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaming news</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="screen"/>
+    
+</head>
+<body>
+    <main>
+        <div class="content">
+        <header>
+            Flaming news
+        </header>
+        <nav>
+            <h1>Get the hottest news!!!</h1>
+            <p>If your FOMO hurts, why not SUBSCRIBE?</p>
+            <button class="redButton">subscribe</button>
+        </nav>
+        <div class="container">
+            <section>
+                <h1>Today's hottest news</h1>
+                <hr>
+                <div id="newsDescription"></div> <!-- This is where the description will be displayed -->
+
+                
+            </section>
+        </div>
+    </div>
+        <footer>
+            2024 All right reserved, Tuvshin-Erdene probably
+        </footer>
+    </main>
+    <script>
+        // Get the description from sessionStorage
+        const description = sessionStorage.getItem('newsDescription');
+
+        // Display the description in the page
+        if (description) {
+            document.getElementById('newsDescription').textContent = description;
+        } else {
+            document.getElementById('newsDescription').textContent = "No description available.";
+        }
+
+        // Clear sessionStorage when the page is loaded to ensure no stale data persists
+        sessionStorage.removeItem('newsDescription');
+    </script>
+</body>
+</html>

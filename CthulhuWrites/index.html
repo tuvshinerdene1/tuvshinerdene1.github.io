@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CthulhuWrites</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1><img src="./pics/images/cthulhu.avif" alt="">Ctulhu Writes</h1>
+        <button class="btn"><img src="./pics/images/edit.png" alt="">Create mythos</button>
+        <button class="btn-random-prompt"><img src="./pics/images/random.png" alt="">Show Random Prompt</button>
+        <button class="btn-export-pdf">Export as PDF</button>
+        <div class="notes-container"></div>
+        <div class="embed-fungen">
+            <script src="https://fungenerators.com/extensions/embed/v1/fungen.js"></script>
+            <script>
+             FunGen.Embed.render({context: 'text', toolId: 'writing-prompt'});
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://fungenerators.com/random/text/writing-prompt">Writing Prompt Generator from fungenerators.com.</a></noscript>
+            <div class="light-text" style="text-decoration: none; color:#ccc; text-align: right; padding-right: 20px; margin-top: 0px;"><a href="https://fungenerators.com/random/text/writing-prompt" title="Powered by Writing Prompt Generator from fungenerators.com" style="text-decoration: none; color:#ccc; ">fungenerators.com</a></div>
+         </div>
+    </div>
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
